@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W P D DRAMA WEB</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="mainView">
+            <div class="section" id="enEstrenoSection">
+                <div class="section-title" data-category="enEstreno">EN ESTRENO</div>
+                <div class="content-scroll" id="enEstrenoScroll"></div>
+            </div>
+            
+            <div class="section" id="seriesSection">
+                <div class="section-title" data-category="series">SERIES</div>
+                <div class="content-scroll" id="seriesScroll"></div>
+            </div>
+            
+            <div class="section" id="peliculasSection">
+                <div class="section-title" data-category="peliculas">PELÍCULAS</div>
+                <div class="content-scroll" id="peliculasScroll"></div>
+            </div>
+        </div>
+
+        <div id="categoryView">
+            <div class="category-header">
+                <button class="back-button">&#8592;</button>
+                <h2 id="categoryTitle"></h2>
+            </div>
+            <div class="search-bar">
+                <span class="icon">🔍</span>
+                <input type="text" placeholder="BUSCAR..." id="categorySearchInput">
+            </div>
+            <div class="content-grid" id="categoryGrid"></div>
+        </div>
+
+        <div id="detailView"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
